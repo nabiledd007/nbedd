@@ -435,21 +435,21 @@
             
             <div class="game-controls">
                 <div class="input-group">
-                    <input type="text" id="player-name" placeholder="Your arena name" required>
+                    <input type="text" id="player-name" placeholder="Your  name" required>
                 </div>
                 
-                <button id="new-game-btn">CREATE ARENA</button>
-                <button class="secondary" id="join-game-btn">JOIN ARENA</button>
+                <button id="new-game-btn">CREATE </button>
+                <button class="secondary" id="join-game-btn">JOIN </button>
                 
                 <div class="input-group hidden" id="join-game-inputs">
-                    <input type="text" id="game-id" placeholder="Enter Arena ID">
-                    <button id="confirm-join-btn">ENTER ARENA</button>
+                    <input type="text" id="game-id" placeholder="Enter  ID">
+                    <button id="confirm-join-btn">ENTER </button>
                 </div>
             </div>
         </div>
         
         <div id="game-screen" class="hidden">
-            <h2>ARENA ID: <span class="game-id-display" id="game-id-display"></span></h2>
+            <h2> ID: <span class="game-id-display" id="game-id-display"></span></h2>
             
             <div class="dice-arena">
                 <div class="dice-scene">
@@ -467,7 +467,7 @@
             </div>
             
             <div class="game-info">
-                <h3>ARENA PLAYERS</h3>
+                <h3> PLAYERS</h3>
                 <div class="players-list" id="players-list"></div>
             </div>
             
@@ -534,7 +534,7 @@
             playerName = playerNameInput.value.trim();
             
             if (!playerName) {
-                showStatusMessage('Please enter your arena name', 'error');
+                showStatusMessage('Please enter your  name', 'error');
                 return;
             }
             
@@ -548,7 +548,7 @@
             playerName = playerNameInput.value.trim();
             
             if (!playerName) {
-                showStatusMessage('Please enter your arena name', 'error');
+                showStatusMessage('Please enter your  name', 'error');
                 return;
             }
             
@@ -584,7 +584,7 @@
             }).then(() => {
                 setupGameScreen();
                 listenToGameChanges();
-                showStatusMessage('Arena created! You are the Leader. Share the Arena ID with others.', 'success');
+                showStatusMessage(' created! You are the Leader. Share the  ID with others.', 'success');
             }).catch(error => {
                 showStatusMessage('Error creating arena: ' + error.message, 'error');
             });
@@ -596,12 +596,12 @@
             const gameId = gameIdInput.value.trim().toUpperCase();
             
             if (!playerName) {
-                showStatusMessage('Please enter your arena name', 'error');
+                showStatusMessage('Please enter your  name', 'error');
                 return;
             }
             
             if (!gameId || gameId.length !== 6) {
-                showStatusMessage('Please enter a valid 6-character Arena ID', 'error');
+                showStatusMessage('Please enter a valid 6-character  ID', 'error');
                 return;
             }
             
@@ -628,9 +628,9 @@
             }).then(() => {
                 setupGameScreen();
                 listenToGameChanges();
-                showStatusMessage('You have entered the arena! Awaiting role assignment.', 'success');
+                showStatusMessage('You have entered the ! Awaiting role assignment.', 'success');
             }).catch(error => {
-                showStatusMessage('Error joining arena: ' + error.message, 'error');
+                showStatusMessage('Error joining : ' + error.message, 'error');
             });
         }
 
