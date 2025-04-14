@@ -9,20 +9,20 @@
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     <style>
         :root {
-            --primary-color: #4361ee; 
-            --primary-dark: #C0102C;
-            --primary-light: #f8a5b0;
-            --secondary-color: #3f37c9;
-            --accent-color: #4895ef;
-            --light-color: #f8f9fa;
-            --dark-color: #212529;
-            --success-color: #28a745;
-            --warning-color: #ffc107;
-            --error-color: #dc3545;
-            --info-color: #17a2b8;
-            --gray-light: #e9ecef;
-            --gray-medium: #adb5bd;
-            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  --primary-color: #4361ee;  /* Bright blue */
+        --primary-dark: #3a56d4;   /* Slightly darker blue */
+        --primary-light: #a5b8ff;  /* Light blue */
+        --secondary-color: #3f37c9; /* Deep blue */
+        --accent-color: #4895ef;   /* Sky blue */
+        --light-color: #f8f9fa;
+        --dark-color: #212529;
+        --success-color: #28a745;
+        --warning-color: #ffc107;
+        --error-color: #dc3545;
+        --info-color: #17a2b8;
+        --gray-light: #e9ecef;
+        --gray-medium: #adb5bd;
+        --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         * {
@@ -685,47 +685,47 @@
                         <div class="error-message" id="descriptionError" data-i18n="description_error">Please describe your idea</div>
                     </div>
                     
-                    <div class="form-group">
-                        <label class="form-label required" data-i18n="department_label">Department</label>
-                        <div class="radio-group">
-                            <label class="radio-option">
-                                <input type="radio" name="department" value="Finance" checked> 
-                                <span>Finance</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="department" value="Production Assembly"> 
-                                <span>Production Assembly</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="department" value="Production C&P"> 
-                                <span>Production C&P</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="department" value="Engineering"> 
-                                <span>Engineering</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="department" value="Logistic"> 
-                                <span>Logistic</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="department" value="Quality"> 
-                                <span>Quality</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="department" value="HR"> 
-                                <span>HR</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="department" value="HSE"> 
-                                <span>HSE</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="department" value="Maintenance"> 
-                                <span>Maintenance</span>
-                            </label>
-                        </div>
-                    </div>
+                   <div class="form-group">
+    <label class="form-label required" data-i18n="department_label">Department</label>
+    <div class="radio-group">
+        <label class="radio-option">
+            <input type="radio" name="department" value="Finance" checked> 
+            <span data-i18n="department_finance">Finance</span>
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="department" value="Production Assembly"> 
+            <span data-i18n="department_prod_assembly">Production Assembly</span>
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="department" value="Production C&P"> 
+            <span data-i18n="department_prod_cp">Production C&P</span>
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="department" value="Engineering"> 
+            <span data-i18n="department_engineering">Engineering</span>
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="department" value="Logistic"> 
+            <span data-i18n="department_logistic">Logistic</span>
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="department" value="Quality"> 
+            <span data-i18n="department_quality">Quality</span>
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="department" value="HR"> 
+            <span data-i18n="department_hr">HR</span>
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="department" value="HSE"> 
+            <span data-i18n="department_hse">HSE</span>
+        </label>
+        <label class="radio-option">
+            <input type="radio" name="department" value="Maintenance"> 
+            <span data-i18n="department_maintenance">Maintenance</span>
+        </label>
+    </div>
+</div>
                     
                     <button type="submit" class="btn btn-block pulse" data-i18n="submit_btn">
                         <i class="fas fa-paper-plane"></i> Submit Idea
@@ -810,7 +810,16 @@
                 "success_ok": "Got It!",
                 "qr_title": "Share this form",
                 "download_qr": "Download QR Code",
-                "footer_text": "© 2025 Fujikura Innovation Portal. CREATE BY NABIL DGHOUGHI.."
+                "footer_text": "© 2025 Fujikura Innovation Portal. CREATE BY NABIL DGHOUGHI..",
+              "department_finance": "Finance",
+        "department_prod_assembly": "Production Assembly",
+        "department_prod_cp": "Production C&P",
+        "department_engineering": "Engineering",
+        "department_logistic": "Logistic",
+        "department_quality": "Quality",
+        "department_hr": "HR",
+        "department_hse": "HSE",
+        "department_maintenance": "Maintenance"
             },
             fr: {
                 "title": "Portail d'Idées Fujikura",
@@ -838,7 +847,16 @@
                 "success_ok": "Compris!",
                 "qr_title": "Partager ce formulaire",
                 "download_qr": "Télécharger le QR Code",
-                "footer_text": "© 2025 Portail d'Innovation Fujikura. CREATE BY NABIL DGHOUGHI."
+                "footer_text": "© 2025 Portail d'Innovation Fujikura. CREATE BY NABIL DGHOUGHI.",
+              "department_finance": "Finance",
+        "department_prod_assembly": "Assemblage de Production",
+        "department_prod_cp": "Production C&P",
+        "department_engineering": "Ingénierie",
+        "department_logistic": "Logistique",
+        "department_quality": "Qualité",
+        "department_hr": "Ressources Humaines",
+        "department_hse": "HSE (Sécurité et Environnement)",
+        "department_maintenance": "Maintenance"
             },
             ar: {
                 "title": "بوابة أفكار فوجيكورا",
@@ -866,7 +884,16 @@
                 "success_ok": "فهمت!",
                 "qr_title": "شارك هذا النموذج",
                 "download_qr": "تحميل رمز الاستجابة السريعة",
-                "footer_text": "بوابة الابتكار فوجيكورا. من إبداع نبيل دغوغي 2025 ©."
+                "footer_text": "بوابة الابتكار فوجيكورا. من إبداع نبيل دغوغي 2025 ©.",
+              "department_finance": "المالية",
+        "department_prod_assembly": "تجميع الإنتاج",
+        "department_prod_cp": "الإنتاج C&P",
+        "department_engineering": "الهندسة",
+        "department_logistic": "اللوجستية",
+        "department_quality": "الجودة",
+        "department_hr": "الموارد البشرية",
+        "department_hse": "السلامة والبيئة",
+        "department_maintenance": "الصيانة"
             }
         };
 
